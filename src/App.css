@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+
+.nav_bar {
+  background-color: #f6f8fa;
+  height: 104px;
+  border: solid 1px #d8dee4;
+}
+
+.container_wrapper {
+  padding-left: 32px;
+  padding-right: 32px;
+  width: 100vw;
+  background-color: #61dafb;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: red;
+  border: solid 1px #d8dee4;
+}
