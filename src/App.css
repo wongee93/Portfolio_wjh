@@ -1,3 +1,52 @@
+.hamburger-icon {
+  font-size: 16px;
+  color: grey;
+}
+
+.menu-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: solid 1px #d8dee4;
+  border-radius: 5px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.github-icon {
+  margin-left: 8px;
+  font-size: 32px;
+}
+
+.menu-list-icon {
+  color:#4b5055;
+  margin-right: 6px;
+}
+
+.name-tag {
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.app-header-local ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.app-header-local li {
+ list-style: none;
+ color:#4b5055;
+ font-size: 15px;
+ margin-right: 20px;
+}
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -17,8 +66,10 @@
 .app-header-global {
   height: 32px;
   padding-top: 16px;
-  padding-bottom: 16px;
-  border: solid 1px #d8dee4;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
 }
 
 .app-header-local {

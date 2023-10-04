@@ -1,12 +1,10 @@
 import './App.css';
+import { Navbar } from './component/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <nav className='nav-bar'>
-        <div className='app-header-global'></div>
-        <div className='app-header-local'></div>
-      </nav>
+      <Navbar />
       <div className='main'>
         <div className='container'>
           <div className='data-view-container'>
