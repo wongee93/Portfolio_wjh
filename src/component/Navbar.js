@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faBookOpen, faWrench, faFolderOpen, faBriefcase, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -17,11 +18,11 @@ export const Navbar = () => {
             </div>
             <div className='app-header-local'>
                 <ul>
-                    <FontAwesomeIcon icon={faBookOpen} className='menu-list-icon' /><li>Overview</li>
-                    <FontAwesomeIcon icon={faWrench} className='menu-list-icon' /><li>Skill</li>
-                    <FontAwesomeIcon icon={faFolderOpen} className='menu-list-icon' /><li>Proejct</li>
-                    <FontAwesomeIcon icon={faBriefcase} className='menu-list-icon' /><li>Work Experience</li>
-                    <FontAwesomeIcon icon={faGraduationCap} className='menu-list-icon' /><li>Education</li>
+                    <li><Link to="/"><FontAwesomeIcon icon={faBookOpen} className='menu-list-icon' />Overview</Link></li>
+                    <li><Link to="/skill"><FontAwesomeIcon icon={faWrench} className='menu-list-icon' />Skill</Link></li>
+                    <li><Link to="/project"><FontAwesomeIcon icon={faFolderOpen} className='menu-list-icon' />Project</Link></li>
+                    <li><Link to="/work"><FontAwesomeIcon icon={faBriefcase} className='menu-list-icon' />Work Experience</Link></li>
+                    <li><Link to="/education"><FontAwesomeIcon icon={faGraduationCap} className='menu-list-icon' />Education</Link></li>
                 </ul>
             </div>
         </nav>
