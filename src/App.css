@@ -108,3 +108,11 @@
 .layout-main {
   border: solid 1px #d8dee4;
 }
+
+li.selected::after {
+  content: "";
+  display: block;
+  height: 2px; 
+  background-color: orange; 
+  margin-top: 11px;
+}
