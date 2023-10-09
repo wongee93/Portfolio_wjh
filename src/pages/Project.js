@@ -1,14 +1,13 @@
 import React from 'react'
+import LayoutSidebar from '../component/LayoutSidebar';
 
-const Proejct = () => {
+const Project = () => {
     return (
-        <div className='container'>
-            <div className='data-view-container'>
-                <div className='layout-sidebar'>Proejct</div>
-                <div className='layout-main'>Proejct</div>
-            </div>
-        </div>
+        <>
+            <LayoutSidebar />
+            <div className='layout-main'>Project</div>
+        </>
     )
 }
 
-export default Proejct;
+export default Project;

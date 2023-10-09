@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faBookOpen, faWrench, faFolderOpen, faBriefcase, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-export const Navbar = () => {
+const Navbar = () => {
     const [selectedItem, setSelectedItem] = useState('');
 
     return (
@@ -30,3 +30,5 @@ export const Navbar = () => {
         </nav>
     )
 }
+
+export default Navbar;

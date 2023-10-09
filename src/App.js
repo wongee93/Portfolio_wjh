@@ -1,5 +1,5 @@
 import './App.css';
-import { Navbar } from './component/Navbar';
+import Navbar from './component/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Overview from './pages/Overview';
 import Skill from './pages/Skill';
@@ -13,13 +13,17 @@ function App() {
       <div className="App">
         <Navbar />
         <div className='main'>
-          <Routes>
-            <Route path="/skill" element={<Skill />} />
-            <Route path="/project" element={<Project />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/education" element={<Education />} />
-            <Route path="/" element={<Overview />} />
-          </Routes>
+          <div className='container'>
+            <div className='data-view-container'>
+              <Routes>
+                <Route path="/skill" element={<Skill />} />
+                <Route path="/project" element={<Project />} />
+                <Route path="/work" element={<Work />} />
+                <Route path="/education" element={<Education />} />
+                <Route path="/" element={<Overview />} />
+              </Routes>
+            </div>
+          </div>
         </div>
       </div>
     </Router>

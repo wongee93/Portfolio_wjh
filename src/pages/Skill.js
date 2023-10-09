@@ -1,13 +1,12 @@
 import React from 'react'
+import LayoutSidebar from '../component/LayoutSidebar';
 
 const Skill = () => {
     return (
-        <div className='container'>
-            <div className='data-view-container'>
-                <div className='layout-sidebar'>Skill</div>
-                <div className='layout-main'>Skill</div>
-            </div>
-        </div>
+        <>
+            <LayoutSidebar />
+            <div className='layout-main'>Skill</div>
+        </>
     )
 }
 
