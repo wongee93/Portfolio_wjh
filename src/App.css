@@ -189,7 +189,7 @@ li.selected::after {
 
 .contactInfo > span > a:hover{
   text-decoration: underline;
-  color: rgb(0, 4, 255);
+  color: #0969da;
 }
 
 .contactinfo-icon {
@@ -232,4 +232,121 @@ li.selected::after {
   width: 100%;
   height: 100%;
   object-fit: cover; /* 이미지가 박스 크기에 맞게 조절됨 */
+}
+
+.layout-main {
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.overview-title {
+  display: flex;
+}
+
+.projects-box > ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.projects-box > ul > li {
+  list-style: none;
+  width: calc(50% - 16px);
+  box-sizing: border-box; /* 패딩과 보더가 너비에 포함되도록 설정 */
+  border: solid 1px #d8dee4;
+  margin: 8px;
+  border-radius: 5px;
+}
+
+.project-box {
+  padding: 16px;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #0969da;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-title > a {
+  color: inherit;          /* 상속받은 색상 사용 */
+  text-decoration: none;   /* 밑줄 제거 */
+  outline: none;           /* 테두리 제거 */
+}
+
+.project-icon {
+  margin-right: 4px;
+  color: #4b5055;
+}
+
+.project-skill {
+  display: flex;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.skill-name {
+  display: flex;
+  margin-top: 8px;
+  margin-right: 4px;
+  padding: 6px;
+  color: #4b5055;
+}
+
+.skill-color-blue {
+  display: block;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #0969da;
+}
+
+.skill-color-black {
+  display: block;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+}
+
+.skill-color-skyblue {
+  display: block;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #61dafb;
+}
+
+.skill-color-purple {
+  display: block;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #764abc;
+}
+
+.skill-color-pink {
+  display: block;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #db7093;
+}
+
+.skill-color-yellow {
+  display: block;
+  margin-right: 4px;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: #f1e05a;
 }
