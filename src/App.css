@@ -457,5 +457,33 @@ li.selected::after {
   width: 12px;
   height: 12px;
   border-radius: 2px;
-  background-color: #407ec4;
+  background-color: #4a91e2;
+}
+
+/* test중 */
+.split-colors {
+  position: relative;
+  width: 12px;
+  height: 12px;
+}
+
+.half-color {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.first-color {
+  border-width: 12px 12px 0 0;
+  border-color: #e2be49 transparent transparent transparent;
+  top: 0;
+  left: 0;
+}
+
+.second-color {
+  border-width: 0 0 12px 12px;
+  border-color: transparent transparent #4a91e2 transparent;
+  bottom: 0;
+  right: 0;
 }
