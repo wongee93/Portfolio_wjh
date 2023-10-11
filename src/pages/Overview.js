@@ -4,6 +4,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
 
 const Overview = () => {
+
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+    const SquareSpan = () => <span></span>;
+
+    const rows = 7;
+    const columns = 52;
+    const spans = [];
+
+    for (let i = 0; i < rows * columns; i++) {
+        spans.push(<SquareSpan key={i} />);
+    }
+
     return (
         <>
             <LayoutSidebar />
@@ -43,6 +56,22 @@ const Overview = () => {
                             </div>
                         </li>
                     </ul>
+                </div>
+
+                <div className='timeline-box'>
+                    <div className='overview-title'>Timeline</div>
+                    <div className='timeline-wrapper'>
+                        <table className='timeline-table'>
+                            <thead className='timeline-month'>
+                                <tr>
+                                    {months.map(month => <th key={month}>{month}</th>)}
+                                </tr>
+                            </thead>
+                            <tbody className='timeline'>
+                                {spans}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </>

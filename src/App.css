@@ -82,11 +82,10 @@
 }
 
 .container {
-  width: calc(100vw - 224px);
-  height: calc(100vh - 104px);
+  max-width: 1280px;
+  margin: 0 auto;
+
   margin-top: 8px;
-  margin-left: 80px;
-  margin-right: 80px;
   padding-left: 32px;
   padding-right: 32px;
   display: flex;
@@ -96,17 +95,35 @@
 
 .data-view-container {
   display: grid;
-  grid-template-columns: 1fr 3fr;
   gap: 24px;
   height: calc(100vh - 104px);
+  max-width: 100%; 
+  overflow-x: auto;
+}
+
+/* 화면 너비가 1012px 이하일 때는 1fr 3fr 비율로 나눔 */
+.data-view-container {
+  grid-template-columns: 1fr 3fr;
+}
+
+/* 화면 너비가 1012px 이상일 때만 LayoutSidebar 너비를 296px로 고정 */
+@media (min-width: 1012px) {
+    .data-view-container {
+        grid-template-columns: 296px auto;
+    }
 }
 
 .layout-sidebar {
   border: solid 1px #d8dee4;
+  width: 296px;
+  flex-shrink: 0; /* 이 속성을 사용하면 화면 크기가 줄어들어도 LayoutSidebar의 너비가 고정됨 */
 }
 
 .layout-main {
+  width: calc(100%-296px);
   border: solid 1px #d8dee4;
+  flex: 1; /* layout-main은 남은 공간을 모두 차지하게 됨 */
+  overflow-x: hidden; 
 }
 
 li.selected::after {
@@ -285,6 +302,7 @@ li.selected::after {
 
 .project-skill {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 8px;
   font-size: 12px;
 }
@@ -349,4 +367,51 @@ li.selected::after {
   width: 12px;
   height: 12px;
   background-color: #f1e05a;
+}
+
+.timeline-box {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.timeline-wrapper {
+  overflow-x: auto;
+}
+
+.timeline-table {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: solid 1px #d8dee4;
+  border-radius: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(52, 12px);
+  gap: 4px;
+}
+
+.timeline-month tr {
+  display: flex;
+}
+
+.timeline-month tr th {
+  margin-right: 46px;
+}
+
+.timeline-month th {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.timeline > span {
+  width: 12px;
+  height: 12px;
+  display: block;
+  background-color: #eee;
 }
