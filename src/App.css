@@ -416,3 +416,46 @@ li.selected::after {
   border-radius: 2px;
   background-color: #eee;
 }
+
+.timetable-history-type {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 4px;
+  margin-top: 6px;
+}
+
+.history-type {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #4b5055;
+  margin-right: 8px;
+}
+
+.work {
+  display: inline-block;
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background-color: #40c463;
+}
+
+.education {
+  display: inline-block;
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background-color: #e2be49;
+}
+
+.project {
+  display: inline-block;
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background-color: #407ec4;
+}

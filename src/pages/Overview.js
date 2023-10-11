@@ -80,7 +80,11 @@ const Overview = () => {
                                 </tbody>
                             </table>
                         </div>
-                        <div className=''>test</div>
+                        <div className='timetable-history-type'>
+                            <span className='history-type'><span className='education'></span>Education</span>
+                            <span className='history-type'><span className='project'></span>Project</span>
+                            <span className='history-type'><span className='work'></span>Work</span>
+                        </div>
                     </div>
                 </div>
             </div>
