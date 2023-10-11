@@ -375,10 +375,6 @@ li.selected::after {
 }
 
 .timeline-wrapper {
-  overflow-x: auto;
-}
-
-.timeline-table {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 16px;
@@ -388,6 +384,10 @@ li.selected::after {
   margin-left: 8px;
   margin-right: 8px;
   margin-top: 8px;
+}
+
+.timetable-wrapper {
+  overflow-x: auto;
 }
 
 .timeline {
@@ -413,5 +413,6 @@ li.selected::after {
   width: 12px;
   height: 12px;
   display: block;
+  border-radius: 2px;
   background-color: #eee;
 }
