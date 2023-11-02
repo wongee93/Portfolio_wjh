@@ -371,7 +371,7 @@ li.selected::after {
 
 .timeline-box {
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 
 .timeline-wrapper {
@@ -486,4 +486,68 @@ li.selected::after {
   border-color: transparent transparent #4a91e2 transparent;
   bottom: 0;
   right: 0;
+}
+
+.activity-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activities {
+  width: calc(100% - 140px);
+}
+
+.history-table-wrapper {
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  flex-shrink: 0; 
+  border-radius: 5px;
+  border: solid 1px #d8dee4;
+}
+
+.year-btn-wrapper {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.year-btn-on {
+  background-color: #0969da;
+  width: 85px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.year-btn-off {
+  width: 85px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #4b5055;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.year-btn-off :hover{
+  background-color: #eee;
 }
